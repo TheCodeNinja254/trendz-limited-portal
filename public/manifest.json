@@ -1,0 +1,19 @@
+{
+  "short_name": "Safaricom Internet",
+  "name": "Safaricom | Internet Connectivity",
+  "description": "Safaricom PLC, Home and Business Fiber Connection",
+  "icons": [
+    { "src": "favicons/57x57.png", "sizes": "57x57", "type": "image/png" },
+    { "src": "favicons/72x72.png", "sizes": "72x72", "type": "image/png" },
+    { "src": "favicons/96x96.png", "sizes": "96x96", "type": "image/png" },
+    { "src": "favicons/114x114.png", "sizes": "114x114", "type": "image/png" },
+    { "src": "favicons/152x152.png", "sizes": "152x152", "type": "image/png" },
+    { "src": "favicons/310x310.png", "sizes": "310x310", "type": "image/png" },
+    { "src": "favicons/512x512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "favicons/1024x1024.png", "sizes": "1024x1024", "type": "image/png" }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2CB34A",
+  "background_color": "#ffffff"
+}
