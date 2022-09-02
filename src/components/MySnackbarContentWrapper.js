@@ -79,8 +79,7 @@ const MySnackbarContentWrapper = (props) => {
       aria-describedby="client-snackbar"
       elevation={1}
       message={
-        // eslint-disable-next-line
-                <Box id="client-snackbar" className={classes.message}>
+        <Box id="client-snackbar" className={classes.message}>
           <Typography className={clsx(classes[variantText], classes.textSize)}>
             {message}
           </Typography>
