@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     height: 25,
   },
   copyRight: {
-    backgroundColor: "#37474f",
+    backgroundColor: theme.palette.primary.dark,
     height: 90,
   },
   faqsLinkText: {
