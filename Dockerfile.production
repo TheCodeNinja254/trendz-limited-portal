@@ -1,0 +1,24 @@
+FROM node:lts AS builder
+
+WORKDIR /app
+
+COPY package.json .
+COPY yarn.lock .
+
+RUN yarn install
+
+COPY . .
+
+RUN yarn build
+
+FROM nginx:stable
+
+RUN rm -rf ./usr/share/nginx/html/*
+
+COPY --from=builder /app/build /usr/share/nginx/html
+
+COPY nginx.conf /etc/nginx
+
+EXPOSE 8000
+
+CMD ["nginx","-g","daemon off;"]
