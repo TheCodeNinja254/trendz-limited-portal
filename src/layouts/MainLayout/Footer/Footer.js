@@ -49,6 +49,7 @@ const Footer = () => {
                 >
                   © Quikk {moment().format("YYYY")} | All Rights Reserved
                 </Typography>
+                <Typography variant="caption">Version 0.9.0</Typography>
               </Grid>
             </Grid>
           </Container>
