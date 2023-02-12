@@ -47,9 +47,10 @@ const Footer = () => {
                   variant="subtitle2"
                   className={classes.feedbackText}
                 >
-                  © Quikk {moment().format("YYYY")} | All Rights Reserved
+                  © Trendz Limited {moment().format("YYYY")} | All Rights
+                  Reserved
                 </Typography>
-                <Typography variant="caption">Version 0.9.0</Typography>
+                <Typography variant="caption">Version 1.0</Typography>
               </Grid>
             </Grid>
           </Container>

@@ -1,9 +1,18 @@
 import React from "react";
-import { Button, Card, CardContent, Container, Grid } from "@material-ui/core";
+import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  Container,
+  Grid,
+} from "@material-ui/core";
 import { HashLink } from "react-router-hash-link";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import introImage from "../../../../assets/images/Graphics/intro.jpg";
+import introImage from "../../../../assets/images/Graphics/cooled.jpg";
+import logo from "../../../../assets/images/Logo.png";
+import Image from "../../../../components/Image";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -81,26 +90,22 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 25,
     fontWeight: 700,
   },
+  introLogo: {
+    [theme.breakpoints.down("sm")]: {
+      marginTop: theme.spacing(2),
+    },
+  },
 }));
 const IntroductionScreen = () => {
   const classes = useStyles();
 
   return (
-    <Card elevation={0} className={classes.root}>
+    <Card elevation={0} className={classes.root} id="top">
       <CardContent>
         <Container>
           <Grid container spacing={3} className={classes.introContainer}>
             <Grid item lg={6} xl={6} md={6} sm={12} xs={12}>
-              <span className={classes.IntroText}>
-                <span>
-                  <Typography className={classes.textInitial}>
-                    Fast, Reliable &{" "}
-                  </Typography>
-                  <Typography className={classes.textTrailing}>
-                    Secure transactions
-                  </Typography>
-                </span>
-              </span>
+              <Image src={logo} alt="logo" className={classes.introLogo} />
               <Typography className={classes.sloganText}>
                 Send and Receive Money on <strong>Quikk</strong>
               </Typography>
@@ -112,12 +117,12 @@ const IntroductionScreen = () => {
                     color="primary"
                     className={classes.sendMoneyButton}
                   >
-                    Send Now
+                    Make an Order
                   </Button>
                 </HashLink>
                 <HashLink to="#auth" smooth>
                   <Button variant="outlined" className={classes.createAccount}>
-                    Create a Quikk Account
+                    Learn More
                   </Button>
                 </HashLink>
                 <br />
@@ -126,12 +131,16 @@ const IntroductionScreen = () => {
             <Grid item lg={6} xl={6} md={6} sm={12} xs={12}>
               <Card className={classes.introCard} elevation={0}>
                 <CardContent>
-                  <Typography className={classes.inCardTextMinor}>
-                    Seamless Transactions
-                  </Typography>
-                  <Typography className={classes.inlineText}>
-                    Only On <span className={classes.inCardText}>Quikk</span>
-                  </Typography>
+                  <Box display="flex" justifyContent="right">
+                    <Typography variant="body2" color="primary">
+                      <strong>Trendz Limited</strong>
+                    </Typography>
+                  </Box>
+                  <Box display="flex" justifyContent="right">
+                    <Typography className={classes.inCardTextMinor}>
+                      For all your cooling solutions
+                    </Typography>
+                  </Box>
                 </CardContent>
               </Card>
             </Grid>

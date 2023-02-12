@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import { CheckCircle, Security, Speed } from "@material-ui/icons";
+import { CheckCircle, Speed, Watch } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -102,7 +102,7 @@ const Features = () => {
         <CardContent>
           <Container className={classes.contentWrapper}>
             <Typography variant="h2" className={classes.heading}>
-              Get Powered by Quikk
+              Get All your Cooling Solutions <strong>@TrendzLimited</strong>
             </Typography>
             <Grid container justify="center" spacing={5}>
               <Grid
@@ -121,22 +121,22 @@ const Features = () => {
                     alignItems="center"
                     display="flex"
                   >
-                    <Security className={classes.featureIcon} />
+                    <Watch className={classes.featureIcon} />
                   </Box>
                   <Typography
                     variant="h3"
                     align="center"
                     className={classes.featureTitle}
                   >
-                    Secure API
+                    Fast Delivery
                   </Typography>
                   <Typography
                     variant="body2"
                     align="center"
                     className={classes.featureDescription}
                   >
-                    Security is at the core of our Platform. Send and receive
-                    money securely.
+                    We believe time is money, that is why we save it for you.
+                    Fast!
                   </Typography>
                   <div align="center">
                     <Button
@@ -172,15 +172,14 @@ const Features = () => {
                     align="center"
                     className={classes.featureTitle}
                   >
-                    FAST
+                    ALWAYS ON
                   </Typography>
                   <Typography
                     variant="body2"
                     align="center"
                     className={classes.featureDescription}
                   >
-                    Send money in a few quick clicks. We believe it should be
-                    simple.
+                    Our equipment supports you busy life. So you can get busy.
                   </Typography>
                   <div align="center">
                     <Button

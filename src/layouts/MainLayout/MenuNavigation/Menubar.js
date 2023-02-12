@@ -81,12 +81,12 @@ const useStyles = makeStyles((theme) => ({
     color: "inherit",
   },
   logo: {
-    height: 27,
+    height: 30,
     display: "flex",
-    marginTop: theme.spacing(1),
+    marginTop: theme.spacing(2),
   },
   mobileLogo: {
-    height: 25,
+    height: 40,
     display: "flex",
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(2),
@@ -95,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
     height: 60,
   },
   mobileSecondAppBar: {
-    marginTop: theme.spacing(5),
+    marginTop: theme.spacing(7),
   },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 0),
@@ -121,15 +121,15 @@ const useStyles = makeStyles((theme) => ({
 
 const siteLinks = [
   {
-    label: "Create Account",
-    url: "/home#auth",
+    label: "Home",
+    url: "/home#top",
   },
   {
-    label: "Send Money",
+    label: "Contact Us",
     url: "/home#transactions",
   },
   {
-    label: "About Quikk",
+    label: "About Us",
     url: "/home#about",
   },
 ];

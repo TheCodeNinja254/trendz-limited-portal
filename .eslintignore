@@ -1,5 +1,5 @@
 build/*
 node_modules/*
 coverage/*
-quikk-server.js
+server.js
 public/js/*
